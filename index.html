@@ -57,19 +57,123 @@
       </nav>
       <div class="col-12 col-md-12 col-xs-12 col-lg-12" id="introduction">
           
-        <h3>Hey,</h3>
+        <h1>Hey,</h1>
         <p>do you wanna buy a new device, probably a cell phone or laptop and you are confused; it's totally common, there are a lot of 
             brands out there afterall, but which one is right for you? Well lets help you decide. and we can even link you to sellers. all at no costs.
             We also offer minor customer care service if you are running into issues on your devices.
         </p>
-        <button class="btn-primary"><a href="contact.html" style="color:white; text-decoration: none;">Contact Us</a></button>
+        <a href="contact.html" class="btn btn-sm btn-primary" >Contact us</a> 
+        <h6>or</h6>
+        <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModalLong">Get a recommendation right away!</button>
       </div>
+  
       <footer>
           <p>Made with ❤ by an Angel</p>
       </footer>
     </div>
     
-    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="color: black;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Get a recommendation for your new device!</h5>
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="formControlSelect1">How old is your current device?</label>
+                      <select class="form-control" id="formControlSelect1">
+                          <option>Less than a year</option>
+                          <option>A year</option>
+                          <option>2 years</option>
+                          <option>3 years and over</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="formControlSelect2">What brand are you looking to get?</label>
+                        <select class="form-control" id="formControlSelect2">
+                            <option>Premium phone(Above ₦150,000)</option>
+                            <option>Mid-range phone(₦70,000 - ₦150,000)</option>
+                            <option>Budget phone(Below ₦70,000)</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="formControlSelect3">How long do you plan to use this device?</label>
+                          <select class="form-control" id="exampleFormControlSelect3">
+                              <option>A year or less</option>
+                              <option>2 years</option>
+                              <option>3 years and over</option>
+                              <option>Till it spoils</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="formControlSelect4">Do you do a lot of intesive gaming(PUBG, Fortnite, Asphalt 9 etc.)?</label>
+                            <select class="form-control" id="exampleFormControlSelect4">
+                                <option>Yes</option>
+                                <option>No</option>
+                                <option>Once in a while</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="formControlSelect5">Do you take a lot of pictures or are you into mobile photography?</label>
+                              <select class="form-control" id="exampleFormControlSelect5">
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                  <option>Mostly selfies with a bit of pictures of people and things</option>
+                                  <option>Mostly pictures taken with the back camera, and a bit of selfies</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="formControlSelect6">Do you want your phone to last the whole day?</label>
+                                <select class="form-control" id="exampleFormControlSelect6">
+                                    <option>Absolutely yes!</option>
+                                    <option>I'm not bothered</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label for="formControlSelect7">Do you fancy lots of features on your device?</label>
+                                  <select class="form-control" id="exampleFormControlSelect7">
+                                      <option>Yes, I do</option>
+                                      <option>Nah, not really</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formControlSelect8">Do you keep a lot of documents like music and pictures on your phone(Do you want a large storage)?</label>
+                                    <select class="form-control" id="exampleFormControlSelect8">
+                                        <option>Yes, I do(I need a large storage)</option>
+                                        <option>Nah, mostly on the cloud</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="formControlSelect9">Do you hope to buy a new or used device?</label>
+                                      <select class="form-control" id="exampleFormControlSelect9">
+                                          <option>A new device</option>
+                                          <option>A used device</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formControlSelect10">Do you want a phone with a loud speaker?</label>
+                                        <select class="form-control" id="exampleFormControlSelect10">
+                                            <option>Yes, I do</option>
+                                            <option>Nah, i mostly use external speakers and headphones</option>
+                                          </select>
+                                      </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Get my recommendation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -16,6 +16,23 @@
         text-align: center;
         color: white;
     }
+    .div--card{
+      width: 180px;
+      height: 180px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      border-radius: 5px;
+      border: none;
+      background-color: darkgrey;
+      padding: 20px;
+    }
+    .div--card--2, .div--card--4, .div--card--6{
+      margin-top: -180px;
+      /* margin-left: 190px;  */
+    }
+    .div--card--3, .div--card--5{
+      margin-top: 20px;
+    }
     </style>
 </head>
 <body>
@@ -49,33 +66,230 @@
   <div class="jumbotron jumbotron-fluid" style="background-color: #200C0C; color: white;">
   <div class="container">
     <h1 class="display-4">Here is a list of devices to consider</h1>
-    <p class="lead"><i>DISCLAIMER: WE ARE NOT RESPONSIBLE FOR DEVICES PURCHASED THROUGH THIS LINK THAT DON'T WORK PROPERLY.</i></p>
+    <p class="lead"><i>DISCLAIMER: WE ADVISE YOU CHECK WARRANTY PERIOD OF EACH PRODUCTS BEFORE PURCHASING AND CHECK OUT OUR INSTAGRAM PAGE ON HOW TO MAKE YOUR DEVICE LAST LONGER.</i></p>
   </div>
 </div>
   <div class="container">
       <div class="row">
       <div class="col">
-  <div class="card" style="width: 18rem;">
-  <img src="img/cat.jpg" class="card-img-top" alt="phone a">
+  <div class="card h-100" style="width: 18rem;">
+  <img src="img/nokia71.jpg" class="card-img-top" alt="phone a">
   <div class="card-body">
-    <h5 class="card-title">PHONE A</h5>
+    <h5 class="card-title">Nokia 7.1</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+      Device specifications
+    </button>
   </div>
 </div>
       </div>
-      <div class="col">
-  <div class="card" style="width: 18rem;">
-  <img src="img/cat.jpg" class="card-img-top" alt="phone b">
+  <div class="col">
+  <div class="card h-100" style="width: 18rem;">
+  <img src="img/samsunga30.jpg" class="card-img-top" alt="phone b" style="height: 17.8rem;">
   <div class="card-body">
-    <h5 class="card-title">PHONE B</h5>
+    <h5 class="card-title">Samsung Galaxy A30</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable2">
+        Device specifications
+      </button>
   </div>
 </div>  
+</div>
+<div class="col">
+  <div class="card h-100" style="width: 18rem;">
+  <img src="img/infinixs3p.jpg" class="card-img-top" alt="phone b">
+  <div class="card-body">
+    <h5 class="card-title">Infinix Smart 3 plus</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal3" data-target="#exampleModalScrollable3">
+        Device specifications
+      </button>
+  </div>
+</div>  
+</div>
+</div>
+</div>
+
+
+
+<!-- Modals -->
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <h5>Nokia 7.1</h5>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card bg-dark h-100">
+                        <div class="card-body">
+                          <img src="img/processor.png">
+                          <h5 class="card-title">Processor</h5>
+                          <p class="card-text">Qualcomm SDM636 Snapdragon 636 (14 nm), Octa-core 1.8 GHz Kryo 260.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card bg-primary h-100">
+                        <div class="card-body">
+                          <img src="img/ram.png" alt="">
+                          <h5 class="card-title">RAM</h5>
+                          <p class="card-text">3GB/4GB.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-sm-6">
+                        <div class="card bg-danger h-100">
+                          <div class="card-body">
+                            <img src="img/microsd.png">
+                            <h5 class="card-title">Storage</h5>
+                            <p class="card-text">32GB/64GB.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="card bg-warning h-100">
+                          <div class="card-body">
+                            <img src="img/tv.png" alt="">
+                            <h5 class="card-title">Display</h5>
+                            <p class="card-text">IPS LCD capacitive touchscreen, 16M colors, 5.84 inches, 85.1 cm2 (~79.9% screen-to-body ratio)
+                                Corning Gorilla Glass 3
+                              .</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                          <div class="card bg-success h-100">
+                            <div class="card-body">
+                              <img src="img/camera.png">
+                              <h5 class="card-title">Camera</h5>
+                              <p class="card-text">Dual Main: 12 MP, f/1.8, 1.28µm, Dual Pixel PDAF
+                                  5 MP, f/2.4, 1.12µm, depth sensor.
+                                  Single selfie: 8 MP, f/2.0, 24mm.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card bg-info h-100">
+                            <div class="card-body">
+                              <img src="img/battery.png" alt="">
+                              <h5 class="card-title">Battery</h5>
+                              <p class="card-text">Non-removable Li-Ion 3060 mAh battery, Fast battery charging 18W.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
       </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <h5>Samasung Galaxy A30</h5>
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="card bg-dark h-100">
+                          <div class="card-body">
+                            <img src="img/processor.png">
+                            <h5 class="card-title">Processor</h5>
+                            <p class="card-text">Qualcomm SDM636 Snapdragon 636 (14 nm), Octa-core 1.8 GHz Kryo 260.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="card bg-primary h-100">
+                          <div class="card-body">
+                            <img src="img/ram.png" alt="">
+                            <h5 class="card-title">RAM</h5>
+                            <p class="card-text">3GB/4GB.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                          <div class="card bg-danger h-100">
+                            <div class="card-body">
+                              <img src="img/microsd.png">
+                              <h5 class="card-title">Storage</h5>
+                              <p class="card-text">32GB/64GB.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card bg-warning h-100">
+                            <div class="card-body">
+                              <img src="img/tv.png" alt="">
+                              <h5 class="card-title">Display</h5>
+                              <p class="card-text">IPS LCD capacitive touchscreen, 16M colors, 5.84 inches, 85.1 cm2 (~79.9% screen-to-body ratio)
+                                  Corning Gorilla Glass 3
+                                .</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                          <div class="col-sm-6">
+                            <div class="card bg-success h-100">
+                              <div class="card-body">
+                                <img src="img/camera.png">
+                                <h5 class="card-title">Camera</h5>
+                                <p class="card-text">Dual Main: 12 MP, f/1.8, 1.28µm, Dual Pixel PDAF
+                                    5 MP, f/2.4, 1.12µm, depth sensor.
+                                    Single selfie: 8 MP, f/2.0, 24mm.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="card bg-info h-100">
+                              <div class="card-body">
+                                <img src="img/battery.png" alt="">
+                                <h5 class="card-title">Battery</h5>
+                                <p class="card-text">Non-removable Li-Ion 3060 mAh battery, Fast battery charging 18W.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
+  </div>
+  </div>    
+  </div>
+  </div>
+</div>
       <footer>
           <p>Made with ❤ by an Angel</p>
       </footer>
